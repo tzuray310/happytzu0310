@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #FFFFFF;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* 左側區塊 */
+#leftcolumn {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(200, 100, 255, 0.5);
+}
+
+/* 右側區塊 */
+#rightcolumn {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 控制上下區塊間距 */
+}
+
+/* 內容區塊 */
+.div1, .div2 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(200, 100, 255, 0.5);
+}
+.div1 {
+    text-decoration: none; /* 移除底線 */
+    color: black; /* 文字顏色 */
+    display: flex; /* 讓區塊可點擊 */
+    justify-content: center; /* 置中 */
+    align-items: center;
+    width: 100%; /* 區塊填滿 */
+    height: 100%;
+}
