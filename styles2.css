@@ -17,10 +17,10 @@ body {
 #leftcolumn {
     color: #333;
     border: 1px solid #ccc;
-    background: #00ff9d;
+    background: hsl(157, 100%, 90%);
     margin: 10px 0px 10px 0px;
-    padding: 21px;
-    height: 530px;
+    padding: 57px;   /* 綠色區域 */
+    height: 579px;
     width: 30%;
     float: left;
 }
@@ -81,15 +81,15 @@ body {
 
 
 .div1 img {
-    width: 100%; /* 確保圖片適應 div */
+    width: 50%; /* 確保圖片適應 div */
     display: block;
 }
 .caption {
     position: absolute;
-    bottom: 57px; /* 讓它貼齊圖片底部 */
+    bottom: 218px; /* 讓它貼齊圖片底部 */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 24px;
+    font-size: 14px;
     color: white;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.5); /* 半透明背景，提高可讀性 */
@@ -97,6 +97,117 @@ body {
     border-radius: 5px;     /* 讓背景有緣繳 */
     text-align: center; /* 讓文字置中 */
 }
+.card {
+    width: 100%; /* 讓它寬度適應 div1 */
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(67, 70, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* 讓它相對於 div1 定位 */
+    margin-top: -180px; /* 調整這個數值，讓它往上移動 */
+    margin-left: 6px; /* 調整這個數值讓它往右移動 */
+}
+
+
+
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 讓文字靠左對齊 */
+    justify-content: center;
+}
+
+
+.card-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%; /* 讓文字區塊填滿父元素 */
+}
+
+
+.card-content i {
+    color: #009688;
+    width: 20px; /* 控制圖示的大小 */
+}
+
+
+
+
+
+
+
+
+
+
+#rightcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;    /* 控制兩個div距離 */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px;    /* 綠色區塊妙妙工具 */
+}
+
+.div2 {
+    width: 93%;
+    max-width: 900px;
+    background: #FFFFFF;
+    padding: 23px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div2 h2 {
+    font-size: 22px;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+.job, .education {
+    margin-bottom: 15px;
+}
+
+.job h3, .education h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.job p, .education p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+}
+
+
+
+
+
+
+
 
 
 
